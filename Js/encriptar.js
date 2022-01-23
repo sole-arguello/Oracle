@@ -1,31 +1,17 @@
-
-
-/* Reglas de desencriptación: 
-"enter" es convertido para "e" 
-"imes" es convertido para "i"
-"ai" es convertido para "a"
-"ober" es convertido para "o"
-"ufat" es convertido para "u"
-Solo letras minusculas
-No se permite acentuación de palabras   
-*/
-
-
-
-
 //texto que ingresa
-var encriptarTexto = document.querySelector("#input-texto");
+var textInput = document.querySelector("#textInput");
 //el mensaje
-var msg = document.querySelector("#msg");
+var textOutput = document.querySelector("#textOutput");
 
 //capturo el boton
-var btnEcriptar = document.querySelector("#btn-encriptar");
+var btnEncriptar = document.querySelector("#btn-encriptar");
 
 //escucho el boton
-btnEcriptar.addEventListener("click", function(event){
+btnEncriptar.addEventListener("click", function(event){
     event.preventDefault();
-    msg.value = encriptar(encriptarTexto.value);
-    console.log("clic");
+    //recibe el texto
+    console.log(textInput.value);
+    textOutput.value = encriptar(textInput.value);
 });
 
 /* Reglas de encriptación: 
@@ -37,13 +23,14 @@ btnEcriptar.addEventListener("click", function(event){
 Solo letras minusculas
 No se permite acentuación de palabras 
 */
-function encriptar(encriptarTexto){
-    var encriptarTexto = encriptarTexto.replaceAll("e", "enter")
+//mensaje input 
+function encriptar(mensaje){
+    var mensajeOutput = mensaje.replaceAll("e", "enter")
                          .replaceAll("i", "imes")
                          .replaceAll("a", "ai")
                          .replaceAll("o", "ober")
                          .replaceAll("u", "ufat");
-    return encriptarTexto;
+    return mensajeOutput;
 
 }
 

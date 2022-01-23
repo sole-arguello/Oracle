@@ -1,39 +1,36 @@
+//texto que ingresa
+var textInput = document.querySelector("#textInput");
+//el mensaje
+var textOutput = document.querySelector("#textOutput");
 
-var encriptarTexto = document.querySelector("#btn-encriptar");
-var inputResultado = document.querySelector("#msg");
+//capturo el boton
+var btnDesencriptar = document.querySelector("#btn-desencriptar");
 
-//boton desencriptar
-var desencriptarTexto = document.querySelector("#btn-desencriptar");
-
-desencriptarTexto.addEventListener("click", function(event){
+//escucho el boton
+btnDesencriptar.addEventListener("click", function(event){
     event.preventDefault();
-    console.log("Hice clic");
-    //hasta aca capture el boton
-    inputResultado.value = desencriptarTexto(desencriptarTexto.value);
-    console.log(inputResultado.value);
+    //recibe el texto
+    console.log(textInput.value);
+    textOutput.value = Desencriptar(textInput.value);
 });
 
 
+//mensaje input 
+function Desencriptar(mensaje){
+    var mensajeOutput = mensaje.replaceAll("enter", "e")
+                               .replaceAll("imes", "i")
+                               .replaceAll("ai", "a")
+                               .replaceAll("ober", "o")
+                               .replaceAll("ufat", "u");
+    return mensajeOutput;
 
-/* Reglas de desencriptación: 
-"enter" es convertido para "e" 
-"imes" es convertido para "i"
-"ai" es convertido para "a"
-"ober" es convertido para "o"
-"ufat" es convertido para "u"
-Solo letras minusculas
-No se permite acentuación de palabras   
-*/
-
-function desencriptar(desencriptarTexto){
-    //var textoIngresado = encriptarTexto.value.toLowerCase();
-    var desencriptarTexto = desencriptarTexto.replaceAll("enter", "e")
-                                       .replaceAll("imes", "i")
-                                       .replaceAll("ai", "a")
-                                       .replaceAll("ober", "o")
-                                       .replaceAll("ufat", "u");
-
-return desencriptarTexto;
 }
 
+//boton copiar
+var btnCopiar = document.querySelector("#btn-copy");
+btnCopiar.addEventListener("click", function(){
+
+    navigator.clipboard.writeText(textOutput.value);
+
+});
 

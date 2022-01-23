@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,26 +8,26 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 class="titulo">secreto</h1>
+  <h1 class="titulo">Codigo secreto</h1>
 
   <main class="main">
     <section class="form box">
       <form action="">
         <label for="input-texto">Solo letras minúsculas, sin acento</label>
-        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
-        <input class="btn" type="submit" value="encriptar!" id="btn-encriptar">
-        <input class="btn" type="submit" value="desencriptar!" id="btn-desencriptar">
+        <input class="text-input" type="text" name="input-texto" id="textInput" placeholder="Ingrese el texto aqui">
+        <button class="btn" type="submit" id="btn-encriptar">encriptar!</button>
+        <button class="btn" type="submit" id="btn-desencriptar">desencriptar!</button>
       </form>
     </section>
   
     <section class="msg box">
       <h2 id="">Mensaje encriptado / desencriptado:</h2>
-      <input class="text-input" type="text" id="msg"></input>
-      <input class="btn" type="submit" value="copiar" id="btn-copy">
+      <input class="text-input" type="text" id="textOutput"></input>
+      <button class="btn" type="submit" id="btn-copy">copiar</button>
     </section>
   </main>
 
-  <script src="Js/encriptar.js"></script>
-  <script src="Js/desencritar.js"></script>
+  <script src="/Js/encriptar.js"></script>
+  <script src="/Js/desencritar.js"></script>
 </body>
 </html>
