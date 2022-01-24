@@ -21,7 +21,7 @@ function Desencriptar(mensaje){
 function aletaError(){
     swal({
         title:"Error!!",
-        text: "probando",
+        text: "Caracter Incorrecto",
         icon: "error",
         buttons :false,
         timer:2000
@@ -29,8 +29,25 @@ function aletaError(){
     });
 }
 //----------------------------------------------------------------------------------
+function validacionCaracteres(textoInput){
+
+    var reglaValidacion = new RegExp("^[A-Zéáíóú]", "g");
+    var ingresado = textoInput.value;
+
+    if(ingresado == ""){
+
+        alert("encriptar");
+        return false;
+    }else if(!reglaValidacion.test(ingresado)){
+        return true;
+    }else{
+        aletaError();
+        //return false;
+    }
+}
 
 
+/*
 function validacionCaracteres(){
     var campoForm = document.querySelector("#textInput");
     console.log(campoForm.value);
