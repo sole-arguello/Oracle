@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ES">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,26 +8,53 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 class="titulo">Codigo secreto</h1>
+  <h1 class="titulo">Código 🔐 Secreto</h1>
+    <h2 class="tituto2">Bienvenidos</h2>
 
   <main class="main">
     <section class="form box">
-      <form action="">
-        <label for="input-texto">Solo letras minúsculas, sin acento</label>
-        <input class="text-input" type="text" name="input-texto" id="textInput" placeholder="Ingrese el texto aqui">
+      <h2 id="" class="titulo-box">Ingrseso del Mensaje</h2>
+      <form action="" id="formulario">
+        <label for="input-texto" class="consigna">Solo letras minúsculas, sin acento</label>
+        <input class="text-input" type="text" name="text-Input" id="textInput" placeholder="Ingrese el texto aqui">
         <button class="btn" type="submit" id="btn-encriptar">encriptar!</button>
         <button class="btn" type="submit" id="btn-desencriptar">desencriptar!</button>
+        <span id="error-texto" class="invisible">Caracter Incorrecto</span>
       </form>
     </section>
   
     <section class="msg box">
-      <h2 id="">Mensaje encriptado / desencriptado:</h2>
-      <input class="text-input" type="text" id="textOutput"></input>
-      <button class="btn" type="submit" id="btn-copy">copiar</button>
+      <h2 id="" class="titulo-box">Salida del Mensaje</h2>
+      <form action="">
+        <label for="input-texto"class="consigna">Resultado Encriptado / Desencriptado</label>
+        <input class="text-input" type="text" id="textOutput"readonly></input>
+        <button class="btn" type="button" value="copiar" id="btn-copy">copiar</button>
+        <button calss="btn-" type="button" value="paste" id="btn-paste">pegar</button>
+      </form>
     </section>
   </main>
-  <script src="/Js/prueba.js"></script>
-<!--   <script src="/Js/encriptar.js"></script>
-  <script src="/Js/desencritar.js"></script> -->
+  <!-- 
+  <footer>
+    <p>Copyright © </p>
+    <p id="autorChallange">Trabajo realizado por <strong> Soledad Arguello <br> Challenge no.1 #Alura Latam - Oracle One</strong>
+      <ul calss="social-footer-ul">
+        <li> 
+          <a href="">instagram</a>
+        </li>
+        <li>
+          <a href="">git</a>
+        </li>
+        <li> 
+          <a href="">linkedin</a>
+        </li>
+      </ul>
+    </footer> 
+  -->
+  <script src="/Js/botones.js"></script>
+  <script src="/Js/funciones.js"></script>
+  <script src="/Js/validaciones.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  
 </body>
+
 </html>
