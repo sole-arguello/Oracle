@@ -74,9 +74,11 @@ body {
 /* lo de arriba viene por defecto, es codigo base*/
 .invisible{
   display: none;
+  
 } 
 
-#formulario{
+#error-texto{
+  color: red;
   width: 200px;
   height: 35px;
   margin-bottom: 10px;
