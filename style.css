@@ -36,17 +36,11 @@ body {
   margin: 10px 250px 50px 250px;
   background-color: rgba(0, 0, 0, 0.685);
   border-radius: 0.5em;
-  /*
-  padding: 20px;
-  width: 30vw;
-  margin: 50px 500px 50px 500px;
-  color: whitesmoke;*/
-  
-}
+ }
 
 .box {
   padding: 40px;
-  margin: 10px 15px 10px 20px;
+  margin: 10px 15px 10px 15px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.685);
   border-radius: 0.5em;
@@ -71,6 +65,18 @@ body {
   margin-top: 20px;
   border-radius: 0.5em;
 }
+/* agregue*/
+#btn-paste{
+  border: 10;
+  color: white;
+  font-weight: bold;
+  background-color:rgba(44, 9, 9, 0.911);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 0.5em;
+
+}
+
 .text-input {
   border-radius: 0.5em;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -81,7 +87,7 @@ body {
   width: 100%;
   height: 50px;
 }
-/* lo de arriba viene por defecto, es codigo base*/
+/*---------------------------------*/
 .invisible{
   display: none;
   
@@ -124,4 +130,7 @@ li{
   padding: 15px;
   background: rgb(59, 4, 4);
   border-radius: 0.9em;
+}
+.fab{
+  font-family: "Font Awesome 5 Brands";
 }
