@@ -10,9 +10,17 @@ body {
   background-image: url(/image/proyecto-codigo-secreto.jpg);
   background-size: cover;
   background-position: center;
- font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+.subtitulo{ 
+  color: white;
+  text-align: center;
+  width: 62vw;
+  padding: 15px;
+  margin: 50px 250px 20px 250px;
+  background-color: rgba(0, 0, 0, 0.685);
+  border-radius: 0.5em;
+}
 .main {
   width: 80vw;
   margin: auto;
@@ -21,20 +29,22 @@ body {
 }
 
 .titulo {
+  color: white;
+  text-align: center;
+  width: 62vw;
+  padding: 15px;
+  margin: 10px 250px 50px 250px;
+  background-color: rgba(0, 0, 0, 0.685);
+  border-radius: 0.5em;
+  /*
   padding: 20px;
   width: 30vw;
   margin: 50px 500px 50px 500px;
-  color: whitesmoke;
-}
-.titulo2{
-  width: 15vw;
-  padding: 10px;
-  color: white;
-  background-color:rgba(0, 0, 0, 0.685);
+  color: whitesmoke;*/
+  
 }
 
 .box {
-  
   padding: 40px;
   margin: 10px 15px 10px 20px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
@@ -64,7 +74,7 @@ body {
 .text-input {
   border-radius: 0.5em;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  display: block;
+  display: flex;
   margin: 10px 10px 10px 10px;
   margin-top: 20px;
   padding: 0.5em;
@@ -82,4 +92,36 @@ body {
   width: 200px;
   height: 35px;
   margin-bottom: 10px;
+}
+footer{
+  background-color: rgba(0, 0, 0, 0.466);
+  text-align: center;
+  bottom: 0;
+}
+footer p{
+  color: beige;
+}
+
+footer a {
+  color: beige;
+}
+
+ul{
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+}
+ul li{
+  display: inline-block;
+  margin: 10px 10px;
+/*  width: 50px;
+  height: 50px;
+  text-align: center;*/
+}
+li{
+  display: block;
+  padding: 15px;
+  background: rgb(59, 4, 4);
+  border-radius: 0.9em;
 }

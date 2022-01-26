@@ -52,6 +52,7 @@ btnCopiar.addEventListener("click", function(){
     navigator.clipboard.writeText(textOutput.value);
     //vacia salida del mensaje luego de copiar
     textOutput.value = "";
+    textInput.value = "";
 });
 /*
 var btnPegar = document.querySelector("#btn-pegar");
@@ -66,13 +67,11 @@ btnPegar.addEventListener("click", function(event){
         alert("copie");
     }
 });
-/*
+
 var btnPegar = document.querySelector("#btn-paste");
 btnPegar.addEventListener("click", function(event){
     event.preventDefault();
     var textoCopiado = document.querySelector("#textOutput");
-    //textoCopiado.select();
-    //document.execCommand("paste");
+    textoCopiado.select();
+    document.execCommand("paste");
 });*/
-
-
