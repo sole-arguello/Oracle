@@ -18,7 +18,7 @@ textInput.addEventListener("input", function(){
             text: "CARACTER INVALIDO",
             icon: "error",
             buttons :false,
-            timer:3000
+            timer:2500
         });        
     }else{
         errorTexto.classList.add("invisible");
@@ -49,6 +49,7 @@ btnPegar.addEventListener("click", function(event){
     var textoCopiado = textOutput.value;
     textInput.value = textoCopiado;
     console.log(textoCopiado);
+    textOutput.value = "";
 });
 //-------------------------------------------------------------------------------
 

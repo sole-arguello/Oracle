@@ -1,0 +1,27 @@
+/*
+var validacion = (e) => {
+    switch (e.target.name){
+        case "text-Input":
+            if(expresiones.textInput.test(e.target.value)){
+
+
+            }else{
+                document.getElementById("textInput").classList.add()
+            }
+        break;
+
+    }
+}
+
+inputs.forEach((input) =>{
+    input.addEventListener("keyup", validacion);
+    input.addEventListener("blur", validacion);
+});
+
+formulario.addEventListener("submit", (e) =>{
+    e.preventDefault();
+});*/
+challengeonelogicalatam
+challengeonelogicalatam
+
+https://sole-arguello.github.io/Oracle-Alura/
