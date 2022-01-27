@@ -15,7 +15,7 @@ textInput.addEventListener("input", function(){
         errorTexto.classList.remove("invisible");
         swal({
             title:"Error!!",
-            text: "Carracter Invalido",
+            text: "CARACTER INVALIDO",
             icon: "error",
             buttons :false,
             timer:3000
@@ -50,7 +50,7 @@ btnCopiar.addEventListener("click", function(){
     //alerta copiado
     swal({
         title:"Texto Copiado!!",
-        text : "LO PEGA EN ENTRADA",
+        text : "UTILICE EL BOTON PEGAR TEXTO",
         icon: "success",
         buttons :false,
         timer:2500//tiempo que se muestra y desaparece automaticamente

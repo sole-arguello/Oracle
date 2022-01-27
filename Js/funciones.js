@@ -3,6 +3,7 @@
 function encriptar(mensaje){
     swal({
         text:"Mensaje Encriptado",
+        text : "UTILICE EL BOTON COPIAR TEXTO",
         icon: "success",
         buttons :false,
         timer:2500//tiempo que se muestra y desaparece automaticamente
@@ -19,6 +20,7 @@ function encriptar(mensaje){
 function Desencriptar(mensaje){
     swal({
         text:"Mensaje Desencriptado",
+        text : "UTILICE EL BOTON PEGAR TEXTO",
         icon: "success",
         buttons :false,
         timer:2500//tiempo que se muestra y desaparece automaticamente
