@@ -43,8 +43,18 @@ textInput.addEventListener("input", function(){
     }
 });
 //------------------------------------------------------------------------------
+var btnPegar = document.querySelector("#btn-copy");
+btnPegar.addEventListener("click", function(event){
+    event.preventDefault();
+    var textoCopiado = textOutput.value;
+    textInput.value = textoCopiado;
+    console.log(textoCopiado);
+});
+//-------------------------------------------------------------------------------
+
+ //seria otra forma pero funciona mas como copy-paste
 //capturo el boton COPIAR
-var btnCopiar = document.querySelector("#btn-copy");
+/*var btnCopiar = document.querySelector("#btn-copy");
 // lo escucho
 btnCopiar.addEventListener("click", function(){
     //alerta copiado
@@ -81,15 +91,4 @@ btnPegar.addEventListener("click", function(){
     });
     //vacia salida del mensaje luego de copiar
     textOutput.value = "";
-});
-//-------------------------------------------------------------------------------
-
-/* seria otra forma pero funciona mas como copy-paste
-
-var btnPegar = document.querySelector("#btn-paste");
-btnPegar.addEventListener("click", function(event){
-    event.preventDefault();
-    var textoCopiado = textOutput.value;
-    textInput.value = textoCopiado;
-    console.log(textoCopiado);
 });*/

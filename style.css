@@ -65,17 +65,6 @@ body {
   margin-top: 20px;
   border-radius: 0.5em;
 }
-/* agregue*/
-#btn-paste{
-  border: 10;
-  color: white;
-  font-weight: bold;
-  background-color:rgba(44, 9, 9, 0.911);
-  padding: 10px;
-  margin-top: 20px;
-  border-radius: 0.5em;
-
-}
 
 .text-input {
   border-radius: 0.5em;
