@@ -4,14 +4,15 @@ var textInput = document.querySelector("#textInput");
 //el mensaje que recibe para ser copiado(msg)
 var textOutput = document.querySelector("#textOutput");
 //mensaje que recibe del html para los errores
-var errorTexto = document.querySelector("#error-texto");
+var errorTexto = document.querySelector("#error-texto"); // invisible 
 
 //----------------- VALIDACION DEL TEXTO ------------------------------------
+
 textInput.addEventListener("input", function(){
 
     var expresionesInvalidas = /[A-Zéáíóú]/;
-    
-    if(textInput.value.length > 0 && expresionesInvalidas.test(textInput.value)){
+   
+    if(expresionesInvalidas.test(textInput.value)){
         errorTexto.classList.remove("invisible");
         swal({
             title:"Error!!",
@@ -41,6 +42,7 @@ textInput.addEventListener("input", function(){
             textOutput.value = Desencriptar(textInput.value);
         });
     }
+    
 });
 //------------------------------------------------------------------------------
 var btnPegar = document.querySelector("#btn-copy");
